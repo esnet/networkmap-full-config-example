@@ -1,0 +1,155 @@
+{
+        "background": "#EDEDED",
+        "configurationUrl": "https://raw.githubusercontent.com/frederic-loui/flux-test/refs/heads/main/gp4l-esnet-panel.json",
+        "customEdgeTooltip": "\n  <div class=\"flow-tooltip\">\n    <strong>\n      ${forward.from} → ${forward.to}\n      <br />\n      Rate: ${forward.dataPoint}\n    </strong>\n  </div>\n  <div class=\"flow-tooltip\">\n    <span>\n      ${reverse.from} → ${reverse.to}\n      <br />\n      Rate: ${reverse.dataPoint}\n    </span>\n  </div>\n",
+        "customNodeTooltip": "\n  <div class=\"flow-tooltip\">\n    <strong>${name}</strong>\n  </div>\n  <div class=\"flow-tooltip\">\n    <strong>In Volume: ${inValue}</strong>\n  </div>\n  <div class=\"flow-tooltip\">\n    <strong>Out Volume: ${outValue}</strong>\n  </div>\n",
+        "enableCustomEdgeTooltip": false,
+        "enableCustomNodeTooltip": false,
+        "enableEdgeAnimation": true,
+        "enableEditing": false,
+        "enableNodeAnimation": true,
+        "enableScrolling": true,
+        "initialViewStrategy": "static",
+        "layers": [
+          {
+            "color": "#49a7f25e",
+            "dashboardEdgeDstVar": "destination",
+            "dashboardEdgeDstVarL1": "dest",
+            "dashboardEdgeSrcVar": "source",
+            "dashboardEdgeSrcVarL1": "source",
+            "dashboardNodeVar": "node",
+            "dataFieldLabel": "Volume:",
+            "dstField": "dst",
+            "dstFieldLabel": "To:",
+            "edgeWidth": 2.5,
+            "endpointId": "pops",
+            "inboundValueField": "in_bits",
+            "jsonFromUrl": true,
+            "legend": true,
+            "mapjson": "",
+            "name": "Layer 1",
+            "nodeHighlight": "dark-blue",
+            "nodeNameMatchField": "Node",
+            "nodeThresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red"
+                },
+                {
+                  "color": "dark-blue",
+                  "value": 1
+                }
+              ]
+            },
+            "nodeValueField": "Up/Down (1: up, 0:down)",
+            "nodeWidth": 5,
+            "outboundValueField": "out_bits",
+            "pathOffset": 1.5,
+            "srcField": "src",
+            "srcFieldLabel": "From:",
+            "visible": true
+          },
+          {
+            "color": "#37178029",
+            "dashboardEdgeDstVar": "destination",
+            "dashboardEdgeDstVarL1": "dest",
+            "dashboardEdgeSrcVar": "source",
+            "dashboardEdgeSrcVarL1": "source",
+            "dashboardNodeVar": "node",
+            "dataFieldLabel": "Volume:",
+            "dstFieldLabel": "To:",
+            "edgeWidth": 1.5,
+            "endpointId": "pops",
+            "jsonFromUrl": false,
+            "legend": false,
+            "mapjson": "{\"edges\":[],\"nodes\":[]}",
+            "mapjsonUrl": "",
+            "name": "Layer 2",
+            "nodeHighlight": "red",
+            "nodeWidth": 5,
+            "pathOffset": 1.5,
+            "srcFieldLabel": "From:",
+            "visible": false
+          },
+          {
+            "color": "grey",
+            "dashboardEdgeDstVarL1": "dest",
+            "dashboardEdgeSrcVarL1": "source",
+            "dashboardNodeVar": "node",
+            "dataFieldLabel": "Volume:",
+            "dstFieldLabel": "To:",
+            "edgeWidth": 3,
+            "endpointId": "pops",
+            "jsonFromUrl": false,
+            "legend": false,
+            "mapjson": "{\"edges\":[],\"nodes\":[]}",
+            "mapjsonUrl": "",
+            "name": "Layer 3",
+            "nodeHighlight": "red",
+            "nodeWidth": 5,
+            "pathOffset": 3,
+            "srcFieldLabel": "From:",
+            "visible": false
+          }
+        ],
+        "legendColumnLength": 3,
+        "legendDefaultBehavior": "visible",
+        "legendPosition": "bottomleft",
+        "nodeThresholds": {
+          "mode": "absolute",
+          "steps": [
+            {
+              "color": "red"
+            },
+            {
+              "color": "green",
+              "value": 1
+            }
+          ]
+        },
+        "showLegend": true,
+        "showSidebar": false,
+        "showViewControls": true,
+        "thresholds": [
+          {
+            "color": "#1F60C4"
+          },
+          {
+            "color": "#3274D9",
+            "value": 10000000000
+          },
+          {
+            "color": "#5794F2",
+            "value": 100000000000
+          },
+          {
+            "color": "#8AB8FF",
+            "value": 1000000000000
+          },
+          {
+            "color": "#C0D8FF",
+            "value": 10000000000000
+          },
+          {
+            "color": "#EAB839",
+            "value": 100000000000000
+          }
+        ],
+        "tileset": {
+          "geographic": "arcgis"
+        },
+        "topologySource": "url",
+        "viewport": {
+          "center": {
+            "lat": 52.89303811972913,
+            "lng": 17.91437157970182
+          },
+          "zoom": 7.5
+        },
+        "viewportZoom": 5,
+        "zIndexBase": 200
+      }
+
+
+
